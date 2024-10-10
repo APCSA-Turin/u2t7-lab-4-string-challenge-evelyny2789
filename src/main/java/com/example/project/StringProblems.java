@@ -9,7 +9,12 @@ public class StringProblems{
     // endsLy("oddy") → false
     public boolean endsLy(String x){
             //implement code here
-        return false;
+            if (x.ends(ly)){
+                return true; 
+            } else {
+                return false; 
+            }
+        
     }
 
 
@@ -21,7 +26,10 @@ public class StringProblems{
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
         //implement code here
-        return "";
+        if (s1.substring(s1.length) == s2.substring(0,1)){
+            return s1.substring(0, sl.length) + s2;
+        }
+        
     }
 
     // Given a string, return a version without the first 2 chars. 
@@ -32,7 +40,17 @@ public class StringProblems{
     // deFront("away") → "aay"
     public String deFont(String s1){
         //implement code here
-        return "";
+        String index0 = s1.substring(0,1);
+        String index1 = s1.substring(1,2); 
+        if (index0=="a" and index1 == "b") {
+            return  s1.substring(2); 
+        } else if (index0 == "a");{
+            return s1.substring(1); 
+        } else if (index1 == "b"){
+            return s1.substring(0,1) + s1.substring(2); 
+        }
+            
+
     }
 
     
@@ -43,7 +61,15 @@ public class StringProblems{
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
     public String withoutX(String s1){
-        return "";
+        if (s1.substring(0,1)=="x" and s1.substring(s1.length - 1) =="x"){
+            return s1.substring (1, s1.length-2); 
+        }
+            if (s1.substring(0,1)=="x"){
+            String firstX = s1.substring(1); 
+        }
+        if (s1.substring(s1.length - 1) =="x"){
+            String lastX = 
+        }
     }
 
     // Given a string str, if the string starts with "f" return "Fizz".
